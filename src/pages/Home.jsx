@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-      <img src="images/banner.png" alt="banner" />
+      <img className='mx-auto' src="images/banner.png" alt="banner" />
       <div className="header text-center font-Poppins font-medium text-3xl my-12">Top Partners</div>
       <div className='partner container mx-auto flex justify-center'>
         <Card />
