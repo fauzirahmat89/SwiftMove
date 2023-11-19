@@ -7,6 +7,7 @@ import Contact from './pages/Contact'
 import Login from './Auth/login'
 import Register from './Auth/register'
 import Sidebar from './components/Sidebar'
+import Detail from './pages/Detail'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/Auth/register" element={<Register />} />
           <Route path="/components/Sidebar" element={<Sidebar/>} />
           <Route path="/Home" element={<Home />}></Route>
+          <Route path="/Detail" element={<Detail/>}></Route>
         </Routes>
       </div>
     </Router>
