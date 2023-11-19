@@ -1,6 +1,8 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Card from '../components/Card'
+import Footer1 from '../components/Footer'
+
 
 const Home = () => {
   return (
@@ -21,6 +23,7 @@ const Home = () => {
         </div>
         <img className="w-96 items-center" src="images/wooden.jpg" alt="" />
       </div>
+      <Footer1 />
     </div>
   )
 }
