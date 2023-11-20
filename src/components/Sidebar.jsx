@@ -2,58 +2,55 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom'; // Jika menggunakan React Router
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars,faHome, faUser,faChartBar,faUsers ,faHandshake } from '@fortawesome/free-solid-svg-icons';
 
 const Sidebar = ({ username }) => {
   return (
-    <aside className="bg-gradient-to-r from-purple-700 to-indigo-800 w-64 p-4 h-full text-white">
-      <div className="mb-8">
-        <img
-          className="w-16 h-16 rounded-full object-cover border-2 border-white mb-2"
-          src="https://via.placeholder.com/150"
-          alt="Profile"
-        />
-        <div className="text-xl font-semibold">{username}</div>
-      </div>
-      <nav>
-        <ul>
-          <li className="mb-2">
-            <Link to="/" className="flex items-center">
-              <svg
-                className="w-5 h-5 mr-2"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path d="M4 6h16M4 12h16m-7 6h7"></path>
-              </svg>
-              Dashboard
-            </Link>
-          </li>
-          <li className="mb-2">
-            <Link to="/profile" className="flex items-center">
-              <svg
-                className="w-5 h-5 mr-2"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 2c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4zm-1 15h2v-2h-2zm2-12c-2.67 0-8 1.34-8 4v2c0 2.66 5.33 4 8 4s8-1.34 8-4v-2c0-2.66-5.33-4-8-4z"
-                ></path>
-              </svg>
-              Profile
-            </Link>
-          </li>
-          {/* Tambahkan menu lainnya */}
-        </ul>
-      </nav>
-    </aside>
+    <aside className="ml-1 mt-1 mb-1 bg-gradient-to-b rounded-2xl from-blue-500 to-purple-700 text-white w-64 p-4 overflow-y-auto">
+    <div className=" w 1/2 flex items-center  bg-white rounded-xl p-2">
+    <img src="/Logo.png" alt="Logo" className="w-14 h-14" />
+    <h2 className='text-sky-500 mr-20 font-sm font-Poppins font-bold'>Swifmove</h2>
+    <button
+     
+      className="lg:hidden text-white focus:outline-none"
+    >
+      <FontAwesomeIcon icon={faBars} />
+    </button>
+  </div>
+
+  {/* Sidebar Content (Menu Items) */}
+  <nav className=" mt-4 mr-14 text-teal-50 ">
+    <ul className='mr-10  '>
+      <li className="text-xl  mr-29 py-2 w-60   p-4 hover:bg-blue-400  rounded  " >
+        <a href="/">
+          <FontAwesomeIcon icon={faHome} className="mr-2" />
+          Home
+        </a>
+      </li>
+      <li className="text-xl  mr-29 py-2 w-60   p-4  hover:bg-blue-400  rounded  ">
+        <a href="/profile">
+          <FontAwesomeIcon icon={faChartBar} className="mr-2" />
+          Dashboard
+        </a>
+      </li>
+      <li className="text-xl  mr-29 py-2 w-60   p-4  hover:bg-blue-400  rounded  ">
+        <a href="/profile">
+          <FontAwesomeIcon icon={faUser} className="mr-2" />
+          Customer
+        </a>
+      </li>
+      <li className="text-xl  mr-29 py-2 w-60   p-4  hover:bg-blue-400  rounded  ">
+        <a href="/profile">
+          <FontAwesomeIcon icon={faHandshake} className="mr-2" />
+          Patner
+        </a>
+      </li>
+    </ul>
+  </nav>
+  
+  
+</aside>
   );
 };
 

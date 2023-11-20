@@ -1,10 +1,11 @@
 // src/pages/About.jsx
 import React from 'react';
+import Dashboard from '../admin/Dashboard'
 
 const About = () => {
   return (
     <div>
-      <h2>About Page</h2>
+    <Dashboard />
     </div>
   );
 };
