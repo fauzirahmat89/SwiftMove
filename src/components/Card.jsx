@@ -7,7 +7,7 @@ const Card = () => {
       <div className="card-content">
         <div className="card-body font-Poppins mt-3">
           <div className="card-tittle font-medium text-xl">Service Name</div>
-          <div className="card-text text-base">Professional services for house & apartment moving. Within the city and outside the city.</div>
+          <div className="card-text text-sm mb-3">Professional services for house & apartment moving. Within the city and outside the city.</div>
         </div>
         <div className='flex justify-between mt-3 items-center'>
           <button className='font-Poppins px-3 h-8 rounded-md text-white text-sm' >Book Now</button>

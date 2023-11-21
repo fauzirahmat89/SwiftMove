@@ -4,7 +4,7 @@
 @import 'tailwindcss/utilities';
 
 :root{
-  font-family: 'Poppins';
+  font-family: Poppins;
 }
 
 .Navbar{
@@ -30,4 +30,10 @@ button{
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+.pick-container, .drop-box{
+  background: #1D3063;
+}
 
+.drop-container, .pick-box{
+  background: #356FB6;
+}
