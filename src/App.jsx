@@ -9,6 +9,7 @@ import Register from './Auth/register'
 import Sidebar from './components/Sidebar'
 import Detail from './pages/Detail'
 import Regist from './pages/Regist'
+import Booking from './pages/booking'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/Home" element={<Home />}></Route>
           <Route path="/Detail" element={<Detail/>}></Route>
           <Route path='/Regist' element={<Regist />}></Route>
+          <Route path='/Booking' element={<Booking />}></Route>
         </Routes>
       </div>
     </Router>
