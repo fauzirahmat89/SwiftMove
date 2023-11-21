@@ -11,13 +11,14 @@ import Detail from './pages/Detail'
 import Booking from './pages/booking'
 import Sign from './pages/Sign'
 import SignUp from './pages/SignUp'
+import LandingPages from './pages/LandingPages'
 
 function App() {
   return (
     <Router>
       <div>
         <Routes>
-          <Route exact path="/" element={<Home/>} />
+          <Route path="/" element ={<LandingPages/>} />
           <Route  path="/about" element={<About/>} />
           <Route  path="/contact" element={<Contact/>} />
           <Route path="/Auth/login" element={<Login />} />
