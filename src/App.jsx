@@ -11,6 +11,7 @@ import Detail from './pages/Detail'
 import Booking from './pages/booking'
 import Sign from './pages/Sign'
 import SignUp from './pages/SignUp'
+import Service from './pages/Service'
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path='/SignUp' element={<SignUp />}></Route>
           <Route path='/Booking' element={<Booking />}></Route>
           <Route path='/Sign' element={<Sign />}></Route>
+          <Route path='/Service' element={<Service/>}></Route>
         </Routes>
       </div>
     </Router>

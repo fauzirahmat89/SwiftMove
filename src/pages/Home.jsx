@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-      <img className='w-screen justify-center' src="images/banner.png" alt="banner" />
+      <img className='w-screen justify-center' src="/images/banner.png" alt="banner" />
       <div className="header text-center font-Poppins font-medium text-4xl my-12">Top Partners</div>
       <div className='partner container mx-auto flex justify-center'>
         <Card />
@@ -21,7 +21,7 @@ const Home = () => {
           <div className="text-header font-Poppins text-3xl">Extra protection of your goods <br /> with wooden packaging.</div>
           <div className="text-body font-Poppins text-xl text-justify w-96">We recruit professionals to improve the efficiency of your time and energy when moving house, no need to worry because we will deliver your goods to a new place safely.</div>
         </div>
-        <img className="items-center" style={{width: '500px'}} src="images/wooden.jpg" alt="" />
+        <img className="items-center" style={{width: '500px'}} src="/images/wooden.jpg" alt="" />
       </div>
       <Footer1 />
     </div>
