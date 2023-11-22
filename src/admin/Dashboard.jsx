@@ -2,9 +2,9 @@
 
 import React from 'react';
 import Sidebar from '../components/Sidebar';
-
-import MainContent from '../components/MainContent';
+import MainContent from '../admin/MainContent';
 import NavbarAdmin from '../admin/NavbarAdmin';
+
 
 const Dashboard = () => {
   return (
@@ -13,7 +13,11 @@ const Dashboard = () => {
       <div className="flex-1 flex flex-col overflow-hidden">
         <NavbarAdmin />
         <MainContent />
+     
+
+
       </div>
+     
     </div>
   );
 };

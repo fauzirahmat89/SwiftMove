@@ -10,13 +10,14 @@ import { faSearch,faEnvelope, faBell } from '@fortawesome/free-solid-svg-icons';
 
 
 
+
 const NavbarAdmin = () => {
   return (
   
     <div className="navbar  flex items-center justify-between">
 
     <div className="menu flex-grow text-left ">
-      <a href="/" className="font-Poppins font-reguler text-lg font-size: 1.125rem; ml-7  ">Pages / Dashboard</a>
+      <a href="/" className="font-Poppins font-reguler text-lg font-size: 1.125rem; ml-7  ">Pages / Admin</a>
     </div>
     <input
           type="text"

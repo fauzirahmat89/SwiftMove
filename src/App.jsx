@@ -6,13 +6,24 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Login from './Auth/login'
 import Register from './Auth/register'
-import Sidebar from './components/Sidebar'
 import Detail from './pages/Detail'
 import Booking from './pages/booking'
 import Sign from './pages/Sign'
 import SignUp from './pages/SignUp'
 import Service from './pages/Service'
-import HomeMitra from './Mitra/HomeMitra'
+// import HomeMitra from './Mitra/HomeMitra'
+
+import Dashboard from './pages/Dashboard'
+
+
+import Customer from './customer/index'
+import Patner from './Mitra/index'
+
+import UpdateCustomer from '../src/customer/update'
+import InsertCustomer from './customer/input'
+import ViewCustomer from './customer/view'
+import UpdatePatner from './Mitra/update'
+import InputPatner from './Mitra/input'
 
 function App() {
   return (
@@ -20,18 +31,31 @@ function App() {
       <div>
         <Routes>
           <Route exact path="/" element={<Home/>} />
+
+          <Route  path="/dashboard" element={<Dashboard/>} />
+
           <Route  path="/about" element={<About/>} />
           <Route  path="/contact" element={<Contact/>} />
           <Route path="/Auth/login" element={<Login />} />
           <Route path="/Auth/register" element={<Register />} />
-          <Route path="/components/Sidebar" element={<Sidebar/>} />
+          
           <Route path="/Home" element={<Home />}></Route>
           <Route path="/Detail" element={<Detail/>}></Route>
           <Route path='/SignUp' element={<SignUp />}></Route>
-          <Route path='/Booking' element={<Booking />}></Route>
+          <Route path='/booking' element={<Booking />}></Route>
           <Route path='/Sign' element={<Sign />}></Route>
-          <Route path='/Service' element={<Service/>}></Route>
-          <Route path='/HomeMitra' element={<HomeMitra />}></Route>
+          <Route path='/service' element={<Service/>}></Route>
+          {/* <Route path='/HomeMitra' element={<HomeMitra />}></Route> */}
+
+
+          <Route path="/customer" element={<Customer />} />
+        <Route path="/patner" element={<Patner />} />
+
+        <Route path="/editcustomer" element={<UpdateCustomer />} />
+        <Route path="/inputcustomer" element={<InsertCustomer />} />
+        <Route path="/viewcutomer" element={<ViewCustomer />} />
+        <Route path="/editpatner" element={<UpdatePatner />} />
+        <Route path="/inputpatner" element={<InputPatner />} />
         </Routes>
       </div>
     </Router>
