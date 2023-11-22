@@ -8,9 +8,10 @@ import Login from './Auth/login'
 import Register from './Auth/register'
 import Sidebar from './components/Sidebar'
 import Detail from './pages/Detail'
-import Regist from './pages/Regist'
-import Booking from './pages/booking'
+import Booking from './pages/Booking'
 import HomeMitra from './Mitra/HomeMitra'
+import Service from './pages/Service'
+// import Regist from './pages/Regist'
 
 function App() {
   return (
@@ -25,9 +26,10 @@ function App() {
           <Route path="/components/Sidebar" element={<Sidebar/>} />
           <Route path="/Home" element={<Home />}></Route>
           <Route path="/Detail" element={<Detail/>}></Route>
-          <Route path='/Regist' element={<Regist />}></Route>
           <Route path='/Booking' element={<Booking />}></Route>
           <Route path='/HomeMitra' element={<HomeMitra />}></Route>
+          <Route path='/Service' element={<Service/>}></Route>
+          {/* <Route path='/Regist' element={<Regist />}></Route> */}
         </Routes>
       </div>
     </Router>
