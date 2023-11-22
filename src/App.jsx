@@ -12,6 +12,7 @@ import Booking from './pages/booking'
 import Sign from './pages/Sign'
 import SignUp from './pages/SignUp'
 import Service from './pages/Service'
+import HomeMitra from './Mitra/HomeMitra'
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path='/Booking' element={<Booking />}></Route>
           <Route path='/Sign' element={<Sign />}></Route>
           <Route path='/Service' element={<Service/>}></Route>
+          <Route path='/HomeMitra' element={<HomeMitra />}></Route>
         </Routes>
       </div>
     </Router>

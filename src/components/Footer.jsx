@@ -6,7 +6,7 @@ import { faInstagram, faTwitter, faFacebook } from '@fortawesome/free-brands-svg
 
 const Footer = () => {
   return (
-    <footer className="footer text-white p-5">
+      <footer className="flex flex-col items-center justify-center footer text-white p-5">
       <div className="footertext container mx-auto flex justify-between font-Poppins">
         <div className="w-1/5 justify-center">
           <img src="/Logo.png" alt="" />
@@ -47,7 +47,7 @@ const Footer = () => {
       </div>
       <div className="copyright text-center mt-8">
         &copy; 2023 Your Website. All rights reserved.
-      </div>
+        </div>
     </footer>
   );
 };
