@@ -5,7 +5,7 @@ const Userprofile = () => {
     <div className='flex justify-center items-center m-20 gap-2'>
         <div className='sidebar-profile flex flex-col justify-center rounded-md w-64 bg-white items-start gap-2 p-3 h-60'>
           <button className='btn-profile bg-transparent text-lg font-medium'>My Profile</button>
-          <button className='btn-profile bg-transparent text-lg'>Password</button>
+          <button className='btn-profile bg-transparent text-lg' >Password</button>
           <button className='btn-profile bg-transparent text-lg'>Logout</button>
           <hr />
         </div>
