@@ -25,6 +25,9 @@ import ViewCustomer from './customer/view'
 import UpdatePatner from './Mitra/update'
 import InputPatner from './Mitra/input'
 
+//Page Account Customer
+import Profile from './pages/Profile'
+
 function App() {
   return (
     <Router>
@@ -56,6 +59,8 @@ function App() {
         <Route path="/viewcutomer" element={<ViewCustomer />} />
         <Route path="/editpatner" element={<UpdatePatner />} />
         <Route path="/inputpatner" element={<InputPatner />} />
+        
+        <Route path="/ProfileCust" element={<Profile />} />
         </Routes>
       </div>
     </Router>
