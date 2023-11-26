@@ -2,12 +2,12 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
-import About from './pages/About'
-import Contact from './pages/Contact'
-import Login from './Auth/login'
-import Register from './Auth/register'
+// import About from './pages/About'
+// import Contact from './pages/Contact'
+// import Login from './Auth/login'
+// import Register from './Auth/register'
 import Detail from './pages/Detail'
-import Booking from './pages/booking'
+import Booking from './pages/Booking'
 import Sign from './pages/Sign'
 import SignUp from './pages/SignUp'
 import Service from './pages/Service'
@@ -27,6 +27,7 @@ import InputPatner from './Mitra/input'
 
 //Page Account Customer
 import Profile from './pages/Profile'
+import Status from './pages/Status'
 
 function App() {
   return (
@@ -61,6 +62,7 @@ function App() {
         <Route path="/inputpatner" element={<InputPatner />} />
         
         <Route path="/ProfileCust" element={<Profile />} />
+        <Route path="/status" element={<Status />} />
         </Routes>
       </div>
     </Router>

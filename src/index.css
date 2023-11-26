@@ -34,7 +34,7 @@ button{
   background: #1D3063;
 }
 
-.drop-container, .pick-box, .old-pass{
+.drop-container, .pick-box, .old-pass, .btn-confirm{
   background: #356FB6;
 }
 
