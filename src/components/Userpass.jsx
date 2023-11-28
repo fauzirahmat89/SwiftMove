@@ -7,7 +7,6 @@ const Userpass = () => {
           <button className='btn-profile bg-transparent text-lg'>My Profile</button>
           <button className='btn-profile bg-transparent text-lg font-medium'>Password</button>
           <button className='btn-profile bg-transparent text-lg'>Logout</button>
-          <hr />
         </div>
         <div className='content-profile flex flex-col justify-center rounded-md w-1/3 bg-white items-start gap-2 p-3 h-60'>
         <div className='flex justify-between w-full items-center font-Poppins text-xs'>

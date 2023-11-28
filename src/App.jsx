@@ -28,6 +28,10 @@ import InputPatner from './Mitra/input'
 //Page Account Customer
 import Profile from './pages/Profile'
 import Status from './pages/Status'
+import Order from './Mitra/Order'
+import History from './Mitra/History'
+//trial
+import Trial from './pages/Trial'
 
 function App() {
   return (
@@ -63,6 +67,9 @@ function App() {
         
         <Route path="/ProfileCust" element={<Profile />} />
         <Route path="/status" element={<Status />} />
+        <Route path="/Order" element={<Order />} />
+        <Route path="/history" element={<History />} />
+        <Route path="/trial" element={<Trial />} />
         </Routes>
       </div>
     </Router>
