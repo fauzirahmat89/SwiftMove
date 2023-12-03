@@ -32,6 +32,7 @@ import Order from './Mitra/Order'
 import History from './Mitra/History'
 //trial
 import Trial from './pages/Trial'
+import ProfileMitra from './Mitra/ProfileMitra'
 
 function App() {
   return (
@@ -70,6 +71,7 @@ function App() {
         <Route path="/Order" element={<Order />} />
         <Route path="/history" element={<History />} />
         <Route path="/trial" element={<Trial />} />
+        <Route path="/mitra/profile" element={<ProfileMitra/>}/>
         </Routes>
       </div>
     </Router>
