@@ -1,0 +1,34 @@
+import React, { Component, Fragment } from "react";
+import Post from "../components/Post";
+import axios from "axios";
+
+class Layanan extends Component {
+  state = {
+    post: []
+  }
+
+  componentDidMount(){
+    axios.get('http://localhost:4000/partners')
+      .then(result => {
+        console.log(result.data)
+        this.setState({
+          post: result.data
+        })
+      })
+  }
+
+
+  render() {
+    return (
+      <Fragment>
+        {
+          this.state.post.map((post, index) => {
+            return <Post key={index} name={post.name} />
+          })
+        }
+      </Fragment>
+    )
+  }
+}
+
+export default Layanan;

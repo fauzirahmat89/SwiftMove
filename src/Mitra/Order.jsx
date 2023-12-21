@@ -1,15 +1,17 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Cardorder from '../components/Cardorder'
+import NavbarMitra from '../components/NavbarMitra'
 
 const Order = () => {
   return (
     <div>
-      <Navbar />
+      <NavbarMitra />
       <img className='w-full justify-center' src="images/banner.png" alt="" />
-      <Cardorder />
-      <Cardorder />
+      <div className='order-box flex justify-center items-start mx-auto carousel carousel-vertical rounded-box' >
+        <Cardorder />
+        <Cardorder />
+      </div>
       <Footer />
     </div>
   )

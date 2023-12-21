@@ -10,11 +10,11 @@ const Navbar = () => {
           </div>
           <div className='navbar-nav flex items-center font-Poppins'>
             <a className='mx-4 text-lg' href='/'>Home</a>
-            <a className='mx-4 text-lg' href='/service'>Service</a>
-            <a className='mx-4 text-lg' href='/booking'>Booking</a>
+            <a className='mx-4 text-lg' href='/Signup'>Service</a>
+            <a className='mx-4 text-lg' href='/Signup'>Booking</a>
           </div>
           <div className='flex items-center'>
-            <button className='font-Poppins px-3 h-8 rounded-md text-white' >Sign Up</button>
+            <button className='font-Poppins px-3 h-8 rounded-md text-white' ><a href="/Signup">Sign Up</a></button>
           </div>
         </div>  
       </div>

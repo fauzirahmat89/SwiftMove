@@ -7,11 +7,19 @@
   font-family: Poppins;
 }
 
+.font-medium{
+  font-weight: 500;
+}
+
 .Navbar{
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 button{
+  background-color: #1D3063;
+}
+
+.btn-booking{
   background-color: #1D3063;
 }
 
@@ -30,12 +38,16 @@ button{
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.pick-container, .drop-box, .form-pass{
+.pick-container, .drop-box, .form-pass, .btn-submit{
   background: #1D3063;
 }
 
 .drop-container, .pick-box, .old-pass, .btn-confirm{
   background: #356FB6;
+}
+
+.container{
+  width: 1240px;
 }
 
 .contain{
@@ -44,4 +56,18 @@ button{
 
 .card-profile{
   background-color: #DBDBDB;
+}
+
+.order-box{
+  height: 920px;
+}
+
+.carousel{
+  align-items: start;
+  padding: 20px;
+}
+
+.scrollable-details {
+  max-height: calc(100vh); /* Sesuaikan nilai ini dengan kebutuhan */
+  overflow-y: auto;
 }
